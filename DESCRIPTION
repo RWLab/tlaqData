@@ -1,6 +1,6 @@
 Package: tlaqData
 Title: Data used in Trade Like a Quant Bootcamp
-Version: 1.1
+Version: 1.2
 Authors@R: 
     person("Kris", "Longmore", , "kris@robotwealth.com", role = c("aut", "cre"))
 Description: Includes price history for ETFs representing major asset classes and Russell 1000 constituents.
@@ -11,4 +11,7 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 LazyData: true
 Imports: 
-    tibble
+    tibble,
+    utils
+URL: https://github.com/RWLab/tlaqData
+BugReports: https://github.com/RWLab/tlaqData/issues
