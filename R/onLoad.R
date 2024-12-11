@@ -1,3 +1,4 @@
+#' @importFrom utils download.file
 .onLoad <- function(libname, pkgname) {
   dest <- "data/r1000.rda"
   if (!file.exists(dest)) {
