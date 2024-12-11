@@ -37,4 +37,5 @@ load_r1000 <- function() {
   # Load the data into the global environment
   load(dest, envir = globalenv())
   message("Data successfully loaded.")
+  rm(r1000_url)
 }
