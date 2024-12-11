@@ -2,12 +2,9 @@
 #'
 #' This function downloads and loads the Russell 1000 dataset into the global environment.
 #' The data is temporarily stored in the session's temporary directory (`tempdir()`).
-#' If the dataset is already available in the temporary directory, it is loaded directly
-#' without re-downloading.
 #'
 #' @details
 #' The function checks if the `r1000.rda` file exists in the temporary directory.
-#' If the file does not exist, it downloads the dataset, and saves it in the temporary directory.
 #' The data is then loaded into the global environment.
 #'
 #' This approach ensures that the data is session-specific and does not persist across
@@ -18,11 +15,11 @@
 #'
 #' @examples
 #' \dontrun{
-#' load_r1000_temp()
+#' load_r1000()
 #' }
 #'
 #' @export
-load_r1000_temp <- function() {
+load_r1000 <- function() {
   # Get the temporary directory for the session
   temp_dir <- tempdir()
 
@@ -31,15 +28,8 @@ load_r1000_temp <- function() {
 
   # Check if the data already exists in the temp directory
   if (!file.exists(dest)) {
-    # Data does not exist, download it
-    message("Downloading data, please wait...")
+    message("r1000 data not downloaded when package was attached.")
 
-    # Assume the URL is stored in an internal object `url` in the package
-    load(system.file("data", "link.rda", package = "tlaqData"))
-
-    # Download the data
-    download.file(url, dest, mode = "wb", quiet = TRUE)
-    message("Data successfully downloaded.")
   } else {
     message("Data found in the temporary directory. Loading...")
   }
