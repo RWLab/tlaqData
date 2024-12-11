@@ -29,6 +29,7 @@ load_r1000 <- function() {
   # Check if the data already exists in the temp directory
   if (!file.exists(dest)) {
     message("r1000 data not downloaded when package was attached.")
+    return()
 
   } else {
     message("Data found in the temporary directory. Loading...")

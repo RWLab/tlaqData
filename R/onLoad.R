@@ -1,5 +1,5 @@
 #' @importFrom utils download.file
-.onLoad <- function(libname, pkgname) {
+.onAttach <- function(libname, pkgname) {
   # check if the file exists
   if (!exists("r1000_url")) {
     warning("Error finding R1000 data. Some functionality may not work.")
