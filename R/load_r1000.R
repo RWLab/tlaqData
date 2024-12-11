@@ -28,14 +28,12 @@ load_r1000 <- function() {
 
   # Check if the data already exists in the temp directory
   if (!file.exists(dest)) {
-    message("r1000 data not downloaded when package was attached.")
-    return()
-
-  } else {
-    message("Data found in the temporary directory. Loading...")
+    dest <- file.path(temp_dir, "r1000.rda")
+    message("Downloading data, please wait...")
+    download.file(r1000_url, dest, mode = "wb", quiet = TRUE)
   }
 
   # Load the data into the global environment
   load(dest, envir = globalenv())
-  message("Data successfully loaded into the global environment.")
+  message("Data successfully loaded.")
 }
