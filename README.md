@@ -18,7 +18,7 @@ head(prices)
 To load the Russell 1000 data:
 ```
 library(tlaqData)
-load_r1000()
+data(r1000)
 head(r1000)
 ```
 
