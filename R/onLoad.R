@@ -1,5 +1,6 @@
 #' @importFrom utils download.file
 .onLoad <- function(libname, pkgname) {
+  return()
   data_path <- system.file("data", "link.rda", package = pkgname)
   # check if the file exists
   if (file.exists(data_path)) {

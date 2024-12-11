@@ -30,6 +30,7 @@ load_r1000 <- function() {
   if (!file.exists(dest)) {
     dest <- file.path(temp_dir, "r1000.rda")
     message("Downloading data, please wait...")
+    data(link)
     download.file(r1000_url, dest, mode = "wb", quiet = TRUE)
   }
 
