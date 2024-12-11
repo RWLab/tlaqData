@@ -1,9 +1,11 @@
 #' @importFrom utils download.file
 .onAttach <- function(libname, pkgname) {
+  data_path <- system.file("data", "link.rda", package = pkgname)
   # check if the file exists
-  if (!exists("r1000_url")) {
+  if (file.exists(data_path)) {
+    load(data_path, envir = parent.env(environment()))
+  } else {
     warning("Error finding R1000 data. Some functionality may not work.")
-    return()
   }
 
   # temp directory for the session
