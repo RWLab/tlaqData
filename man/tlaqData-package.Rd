@@ -8,6 +8,14 @@
 \description{
 Includes price history for ETFs representing major asset classes and Russell 1000 constituents.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/RWLab/tlaqData}
+  \item Report bugs at \url{https://github.com/RWLab/tlaqData/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Kris Longmore \email{kris@robotwealth.com}
 
