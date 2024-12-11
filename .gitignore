@@ -50,3 +50,4 @@ po/*~
 rsconnect/
 .Rproj.user
 link.R
+data/r1000.rda
