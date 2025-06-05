@@ -40,3 +40,19 @@
 #' }
 #' @source <https://www.robotwealth.com>
 "r1000"
+
+#' Spot BTC daily price and returns from Binance
+#'
+#' @format ## `btc`
+#' A data frame with 2843 rows and 7 columns:
+#' \describe{
+#'   \item{Date}{Date in format YYYY-MM-DD}
+#'   \item{Ticker}{ticker}
+#'   \item{Close}{Day's closing price}
+#'   \item{MarketCapUS}{Market cap in USD}
+#'   \item{log_return}{Day's close to close log return}
+#'   \item{fwd_log_return}{Next day's close to close log return}
+#'   \item{fwd_simple_return}{Next day's close to close simple return}
+#' }
+#' @source <https://www.robotwealth.com>
+"btc"

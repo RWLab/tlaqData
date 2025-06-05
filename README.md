@@ -1,8 +1,8 @@
 # tlaqData
 Data used in Trade Like a Quant Bootcamp.
 
-Includes price history for ETFs representing major asset classes
-and Russell 1000 constituents.
+Includes price history for ETFs representing major asset classes, 
+Russell 1000 constituents, and spot Bitcoin.
 
 The data is static (ie not updated).
 
@@ -20,5 +20,12 @@ To load the Russell 1000 data:
 library(tlaqData)
 data(r1000)
 head(r1000)
+```
+
+To load the Bitcoin data:
+```
+library(tlaqData)
+data(btc)
+head(btc)
 ```
 
