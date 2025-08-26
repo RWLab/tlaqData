@@ -2,7 +2,7 @@
 Data used in Trade Like a Quant Bootcamp.
 
 Includes price history for ETFs representing major asset classes, 
-Russell 1000 constituents, and spot Bitcoin.
+Russell 1000 constituents, Hyperliquid high market cap perps, and spot Bitcoin.
 
 The data is static (ie not updated).
 
@@ -28,4 +28,9 @@ library(tlaqData)
 data(btc)
 head(btc)
 ```
-
+To load the Hyperliquid data:
+```
+library(tlaqData)
+data(hyperliquid)
+head(hyperliquid)
+```

@@ -56,3 +56,21 @@
 #' }
 #' @source <https://www.robotwealth.com>
 "btc"
+
+#' Hyperliquid perpetual futures OHLCV data for 10 large market cap cryptocurrencies
+#'
+#' @format ## `hyperliquid`
+#' A data frame with 9340 rows and 9 columns:
+#' \describe{
+#'   \item{timestamp}{Datetime in format YYYY-MM-DD HH:mm:SS}
+#'   \item{T}{Time since epoch}
+#'   \item{symbol}{ticker}
+#'   \item{open}{Day's open price}
+#'   \item{close}{Day's close price}
+#'   \item{high}{Day's high price}
+#'   \item{low}{Day's low price}
+#'   \item{volume}{Day's traded volume}
+#'   \item{num_trades}{Day's number of trades}
+#' }
+#' @source <https://www.robotwealth.com>
+"hyperliquid"
