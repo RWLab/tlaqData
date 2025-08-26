@@ -60,10 +60,9 @@
 #' Hyperliquid perpetual futures OHLCV data for 10 large market cap cryptocurrencies
 #'
 #' @format ## `hyperliquid`
-#' A data frame with 9340 rows and 9 columns:
+#' A data frame with 20876 rows and 8columns:
 #' \describe{
 #'   \item{timestamp}{Datetime in format YYYY-MM-DD HH:mm:SS}
-#'   \item{T}{Time since epoch}
 #'   \item{symbol}{ticker}
 #'   \item{open}{Day's open price}
 #'   \item{close}{Day's close price}
