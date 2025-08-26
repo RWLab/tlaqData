@@ -6,6 +6,14 @@ Russell 1000 constituents, Hyperliquid high market cap perps, and spot Bitcoin.
 
 The data is static (ie not updated).
 
+## Installation
+
+```R
+if (!require(pacman)) install.packages("pacman")
+library(pacman)
+p_load_gh("RWLab/tlaqData", dependencies = FALSE, update = FALSE)
+```
+
 ## Usage
 
 To load the asset class ETF data:
